@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
@@ -7,5 +7,18 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Lato",
+      cssVariable: "--font-lato",
+      weights: [300, 400, 600]
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Bebas Neue",
+      cssVariable: "--font-bebas-neue",
+    },
+  ]
 });

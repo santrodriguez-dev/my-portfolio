@@ -1,0 +1,25 @@
+education:
+  - institution: Universidad Distrital Francisco José de Caldas
+    url: https://www.udistrital.edu.co
+    area: Software Engineering Specialist
+    studyType: Bachelor
+    startDate: "2020-01-20"
+    endDate: "2022-05-01"
+    score: "4.0"
+    courses: []
+  - institution: Universidad Incca de Colombia
+    url: https://unincca.edu.co/
+    area: Systems Engineer
+    studyType: Bachelor
+    startDate: "2013-01-20"
+    endDate: "2019-05-01"
+    score: "4.0"
+    courses: []
+  - institution: Instituto Técnico Industrial Centro Don Bosco
+    url: https://www.centrodonbosco.edu.co/
+    area: Academic Bachelor
+    studyType: Bachelor
+    startDate: "2006-02-01"
+    endDate: "2012-12-10"
+    score: "4.0"
+    courses: []

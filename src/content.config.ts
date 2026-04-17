@@ -13,6 +13,11 @@ const basics = defineCollection({
   schema: z.object({
     name: z.string(),
     label: z.string(),
+    profiles: z.array(z.object({
+      network: z.string(),
+      username: z.string(),
+      url: z.string(),
+    }))
   }),
 });
 
@@ -24,5 +29,12 @@ const works = defineCollection({
   }),
 });
 
+const skills = defineCollection({
+  loader: file("src/content/cv/skills.yml"),
+  schema: z.object({
+    name: z.string(),
+  }),
+});
+
 // 5. Export a single `collections` object to register your collection(s)
-export const collections = { basics, works };
+export const collections = { basics, works, skills };

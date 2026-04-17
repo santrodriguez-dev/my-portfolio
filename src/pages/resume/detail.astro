@@ -5,14 +5,15 @@ import MainLayout from "@layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 
 import profileImage from "@images/santi.jpeg";
+import ResumeLayout from "@layouts/ResumeLayout.astro";
 
 const basics = await getEntry("basics", "basics")!;
 
 const { data } = basics;
 ---
 
-<MainLayout title="Santiago Rodriguez | Detail">
-  <a href="/cv">
+<ResumeLayout title="Santiago Rodriguez | Detail">
+  <a href="/resume">
     <Image
       transition:name="profile-img"
       src={profileImage}
@@ -22,4 +23,4 @@ const { data } = basics;
     />
   </a>
   <p transition:name="basics-name" class="text-6xl">{data.name}</p>
-</MainLayout>
+</ResumeLayout>

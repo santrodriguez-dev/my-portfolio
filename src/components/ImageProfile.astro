@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+
+// import profileImage from "@images/santi.jpeg";
+// import profileImage from "@images/santi-formal.jpeg";
+import profileImage from "@images/santi-gpt.png";
+---
+
+<header class="flex justify-center items-center mt-8">
+  <a class="size-40 rounded-full overflow-hidden" href="/resume/detail">
+    <Image
+      transition:name="profile-img"
+      src={profileImage}
+      alt="profile image"
+      width="200"
+      alt="Profile image santiago Rodriguez"
+    />
+  </a>
+</header>

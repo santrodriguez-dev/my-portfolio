@@ -1,0 +1,21 @@
+---
+import ResumeLayout from "@layouts/ResumeLayout.astro";
+import MainContent from "@components/layout/MainContent.astro";
+import SideBar from "@components/layout/SideBar.astro";
+
+import { getEntry, getCollection } from "astro:content";
+
+const [basics, works] = await Promise.all([
+  getEntry("basics", "basics"),
+  getCollection("works"),
+]);
+
+// console.log({ basics, works });
+---
+
+<ResumeLayout title="Santiago Rodriguez | CV">
+  <div class="page flex">
+    <SideBar />
+    <MainContent />
+  </div>
+</ResumeLayout>

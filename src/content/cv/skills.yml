@@ -1,0 +1,108 @@
+- id: html
+  name: HTML
+  level: Master
+  keywords:
+    - Web Development
+    - Frontend
+- id: css
+  name: CSS
+  level: Master
+  keywords:
+    - Web Development
+    - Frontend
+    - Responsive Design
+- id: js
+  name: JavaScript
+  level: Master
+  keywords:
+    - Web Development
+    - Frontend
+    - Backend
+    - Fullstack
+- id: ts
+  name: TypeScript
+  level: Advanced
+  keywords:
+    - Web Development
+    - Frontend
+    - Backend
+    - JavaScript Superset
+- id: react
+  name: React
+  level: Advanced
+  keywords:
+    - Web Development
+    - Frontend
+    - JavaScript Library
+    - UI
+- id: angular
+  name: Angular
+  level: Master
+  keywords:
+    - Web Development
+    - Frontend
+    - Framework
+- id: node
+  name: Node
+  level: Advanced
+  keywords:
+    - Web Development
+    - Backend
+    - JavaScript
+    - Server
+- id: nextjs
+  name: Next.js
+  level: Advanced
+  keywords:
+    - Web Development
+    - Frontend
+    - React Framework
+    - SSR
+    - Static Generation
+- id: astro
+  name: Astro
+  level: Advanced
+  keywords:
+    - Web Development
+    - Frontend
+    - React Framework
+    - SSR
+    - Static Generation
+- id: mysql
+  name: MySQL
+  level: Advanced
+  keywords:
+    - Databases
+    - SQL
+    - Data Storage
+    - Backend
+- id: mongodb
+  name: MongoDB
+  level: Advanced
+  keywords:
+    - Databases
+    - NoSQL
+    - Data Storage
+    - Backend
+- id: aws
+  name: AWS
+  level: Master
+  keywords:
+    - Data Storage
+    - Backend
+    - Cloud computing
+- id: git
+  name: Git
+  level: Advanced
+  keywords:
+    - Version Control
+    - Collaboration
+    - Source Code
+- id: github
+  name: GitHub
+  level: Advanced
+  keywords:
+    - Version Control
+    - Collaboration
+    - Source Code
+    - Git

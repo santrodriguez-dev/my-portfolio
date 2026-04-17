@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary: #434244;
+
+  /* Fonts */
+  --font-lato: var(--font-lato), ui-sans-serif, system-ui;
+  --font-bebas-neue: var(--font-bebas-neue), ui-sans-serif, system-ui;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-lato), system-ui, sans-serif;
+  }
+}
