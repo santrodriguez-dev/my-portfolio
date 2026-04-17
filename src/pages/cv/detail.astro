@@ -1,0 +1,25 @@
+---
+import { getEntry } from "astro:content";
+
+import MainLayout from "@layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+
+import profileImage from "@images/santi.jpeg";
+
+const basics = await getEntry("basics", "basics")!;
+
+const { data } = basics;
+---
+
+<MainLayout title="Santiago Rodriguez | Detail">
+  <a href="/cv">
+    <Image
+      transition:name="profile-img"
+      src={profileImage}
+      alt="profile image"
+      width="500"
+      alt="Profile image santiago Rodriguez"
+    />
+  </a>
+  <p transition:name="basics-name" class="text-6xl">{data.name}</p>
+</MainLayout>

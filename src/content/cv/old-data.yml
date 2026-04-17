@@ -1,0 +1,269 @@
+basics:
+  name: Santiago Rodríguez
+  label: Front end developer
+  image: "/minimalist-portfolio-json/me.webp"
+  email: srodriguezm95@gmail.com
+  phone: "+57 3194339228"
+  url: https://santi.dev
+  summary:
+    Software developer with over 8 years of experience building robust web
+    applications using TypeScript, React, Angular, and Node.js. I have led and supported
+    projects from early stages through full maturity, collaborating with global teams
+    in both on-site and remote environments. My background spans from start-ups to
+    well-established companies. I aim to work in environments where I can continue
+    growing and delivering efficient, high-impact solutions.
+  location:
+    address: "Cra 86 #75a-85 apto 335"
+    postalCode: "57"
+    city: Bogotá
+    countryCode: CO
+    region: Colombia
+  profiles:
+    - network: LinkedIn
+      username: santiago-rodriguez95
+      url: https://www.linkedin.com/in/santiago-rodriguez95
+    - network: GitHub
+      username: santrodriguez-dev
+      url: https://github.com/santrodriguez-dev
+work:
+  - name: CBTW
+    position: Software Development Engineer
+    url: https://cbtw.tech/
+    startDate: "2025-03-15"
+    endDate:
+    summary:
+      Collaborated with a leading U.S. financial services company providing digital
+      wallet solutions for multiple banks, developing and maintaining high-performance,
+      accessible user interfaces using React, TypeScript, and Redux. Worked closely
+      with backend and design teams to translate business and functional requirements
+      into scalable, reusable components within a modern cloud-based architecture. Contributed
+      to the analysis, design, and implementation of new features and enhancements,
+      while ensuring code quality through comprehensive unit and functional testing
+      with Jest. Maintained clear technical documentation, identified performance and
+      usability issues, and delivered continuous improvements to the application in
+      an AWS-driven environment.
+    highlights: []
+  - name: Publicis Global Delivery (PGD)
+    position: Senior Web Developer
+    url: https://www.publicisgroupe.com/
+    startDate: "2024-10-01"
+    endDate: "2025-02-10"
+    summary:
+      Contributing to the migration of multiple products for Wegmans Food Markets,
+      a leading American supermarket chain, leveraging Next.js and Storybook to develop
+      modular, testable, and scalable components and driving fast and efficient value
+      delivery by implementing modern architectures, optimizing performance, and ensuring
+      maintainability.
+    highlights:
+      - Advocating for best practices in software development, including code reviews,
+        CI/CD workflows, performance optimization, and accessibility standards.
+      - Designing and implementing a flexible and scalable architecture that aligns with
+        business objectives while adapting to evolving technical requirements.
+  - name: Huge
+    position: Senior Web Developer
+    url: https://www.hugeinc.com/
+    startDate: "2022-10-01"
+    endDate: "2024-01-30"
+    summary:
+      As a Senior Software Developer, my main role was to lead and participate
+      in the design, development, and implementation of high-quality user interfaces
+      for the Android Enterprise website ensuring scalability, maintenance, and updates.
+      This involves working closely with designers and development teams to turn interface
+      designs into interactive and engaging experiences for users. Using technologies
+      like HTML, CSS, and JavaScript, I was responsible for implementing interfaces
+      that are intuitive, responsive, and compatible with a variety of devices and browsers.
+      In addition, I am committed to optimizing interface performance to ensure fast
+      loading times and a smooth user experience.
+    highlights:
+      - Implemented accessibility improvements for visually impaired users on the Android.com
+        page, resulting in a 5% increase in usability.
+      - Contributed to the professional growth of the team by providing technical guidance,
+        conducting code reviews, and fostering a culture of continuous learning.
+  - name: Globant
+    position: Web UI Developer
+    url: https://www.globant.com/
+    startDate: "2021-04-01"
+    endDate: "2022-11-30"
+    summary:
+      As a semi-senior developer, my primary responsibilities include contributing
+      to the design, development, and enhancement of reusable components and functionalities
+      for web applications. I leverage Angular, TypeScript, and HTML/CSS to build dynamic
+      and scalable user interfaces while efficiently integrating services through GraphQL
+      and RESTful APIs. My role involves optimizing application performance using advanced
+      techniques and implementing unit and integration tests to uphold code quality.
+      I collaborate closely with management teams and stakeholders to analyze business
+      requirements and translate them into reusable, effective technical solutions.
+      I focus on adopting agile methodologies to enable fast, iterative deliveries and
+      emphasize best practices in software engineering to ensure the security, scalability,
+      and long-term maintainability of the products I develop.
+    highlights: []
+  - name: Digital Ware
+    position: Angular Developer
+    url: https://www.digitalware.com.co/
+    startDate: "2017-04-01"
+    endDate: "2021-12-30"
+    summary:
+      I effectively integrated components and functionalities for the implementation
+      of BPM tools (Ophelia BPM) and their different verticals, thus ensuring that all
+      converge into a single technological solution. I used Angular, TypeScript, and
+      HTML/CSS as a stack for the integration of intuitive and easy-to-use web interfaces.
+    highlights: []
+volunteer:
+  - organization: Organization
+    position: Volunteer
+    url: https://organization.com/
+    startDate: "2012-01-01"
+    endDate: "2013-01-01"
+    summary: Description…
+    highlights:
+      - Awarded 'Volunteer of the Month'
+education:
+  - institution: Universidad Distrital Francisco José de Caldas
+    url: https://www.udistrital.edu.co
+    area: Software Engineering Specialist
+    studyType: Bachelor
+    startDate: "2020-01-20"
+    endDate: "2022-05-01"
+    score: "4.0"
+    courses: []
+  - institution: Universidad Incca de Colombia
+    url: https://unincca.edu.co/
+    area: Systems Engineer
+    studyType: Bachelor
+    startDate: "2013-01-20"
+    endDate: "2019-05-01"
+    score: "4.0"
+    courses: []
+  - institution: Instituto Técnico Industrial Centro Don Bosco
+    url: https://www.centrodonbosco.edu.co/
+    area: Academic Bachelor
+    studyType: Bachelor
+    startDate: "2006-02-01"
+    endDate: "2012-12-10"
+    score: "4.0"
+    courses: []
+awards:
+  - title: Award
+    date: "2014-11-01"
+    awarder: Company
+    summary: There is no spoon.
+certificates:
+  - name: Certificate
+    date: "2021-11-07"
+    issuer: Company
+    url: https://certificate.com
+publications:
+  - name: Publication
+    publisher: Company
+    releaseDate: "2014-10-01"
+    url: https://publication.com
+    summary: Description…
+skills:
+  - name: HTML
+    level: Master
+    keywords:
+      - Web Development
+      - Frontend
+  - name: CSS
+    level: Master
+    keywords:
+      - Web Development
+      - Frontend
+      - Responsive Design
+  - name: JavaScript
+    level: Master
+    keywords:
+      - Web Development
+      - Frontend
+      - Backend
+      - Fullstack
+  - name: TypeScript
+    level: Advanced
+    keywords:
+      - Web Development
+      - Frontend
+      - Backend
+      - JavaScript Superset
+  - name: React
+    level: Advanced
+    keywords:
+      - Web Development
+      - Frontend
+      - JavaScript Library
+      - UI
+  - name: Angular
+    level: Master
+    keywords:
+      - Web Development
+      - Frontend
+      - Framework
+  - name: Node
+    level: Advanced
+    keywords:
+      - Web Development
+      - Backend
+      - JavaScript
+      - Server
+  - name: Next.js
+    level: Advanced
+    keywords:
+      - Web Development
+      - Frontend
+      - React Framework
+      - SSR
+      - Static Generation
+  - name: Astro
+    level: Advanced
+    keywords:
+      - Web Development
+      - Frontend
+      - React Framework
+      - SSR
+      - Static Generation
+  - name: MySQL
+    level: Advanced
+    keywords:
+      - Databases
+      - SQL
+      - Data Storage
+      - Backend
+  - name: MongoDB
+    level: Advanced
+    keywords:
+      - Databases
+      - NoSQL
+      - Data Storage
+      - Backend
+  - name: AWS
+    level: Master
+    keywords:
+      - Data Storage
+      - Backend
+      - Cloud computing
+  - name: Git
+    level: Advanced
+    keywords:
+      - Version Control
+      - Collaboration
+      - Source Code
+  - name: GitHub
+    level: Advanced
+    keywords:
+      - Version Control
+      - Collaboration
+      - Source Code
+      - Git
+languages:
+  - language: Spanish
+    fluency: Native speaker
+  - language: English
+    fluency: Advanced
+interests:
+  - name: Wildlife
+    keywords:
+      - Ferrets
+      - Unicorns
+references:
+  - name: Jane Doe
+    reference: Reference…
+projects: []

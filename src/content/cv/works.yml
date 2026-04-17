@@ -1,0 +1,87 @@
+- name: CBTW
+  id: cbtw
+  position: Software Development Engineer
+  url: https://cbtw.tech/
+  startDate: "2025-03-15"
+  endDate:
+  summary:
+    Collaborated with a leading U.S. financial services company providing digital
+    wallet solutions for multiple banks, developing and maintaining high-performance,
+    accessible user interfaces using React, TypeScript, and Redux. Worked closely
+    with backend and design teams to translate business and functional requirements
+    into scalable, reusable components within a modern cloud-based architecture. Contributed
+    to the analysis, design, and implementation of new features and enhancements,
+    while ensuring code quality through comprehensive unit and functional testing
+    with Jest. Maintained clear technical documentation, identified performance and
+    usability issues, and delivered continuous improvements to the application in
+    an AWS-driven environment.
+  highlights: []
+- name: Publicis Global Delivery (PGD)
+  id: pgd
+  position: Senior Web Developer
+  url: https://www.publicisgroupe.com/
+  startDate: "2024-10-01"
+  endDate: "2025-02-10"
+  summary:
+    Contributing to the migration of multiple products for Wegmans Food Markets,
+    a leading American supermarket chain, leveraging Next.js and Storybook to develop
+    modular, testable, and scalable components and driving fast and efficient value
+    delivery by implementing modern architectures, optimizing performance, and ensuring
+    maintainability.
+  highlights:
+    - Advocating for best practices in software development, including code reviews,
+      CI/CD workflows, performance optimization, and accessibility standards.
+    - Designing and implementing a flexible and scalable architecture that aligns with
+      business objectives while adapting to evolving technical requirements.
+- name: Huge
+  id: hige
+  position: Senior Web Developer
+  url: https://www.hugeinc.com/
+  startDate: "2022-10-01"
+  endDate: "2024-01-30"
+  summary:
+    As a Senior Software Developer, my main role was to lead and participate
+    in the design, development, and implementation of high-quality user interfaces
+    for the Android Enterprise website ensuring scalability, maintenance, and updates.
+    This involves working closely with designers and development teams to turn interface
+    designs into interactive and engaging experiences for users. Using technologies
+    like HTML, CSS, and JavaScript, I was responsible for implementing interfaces
+    that are intuitive, responsive, and compatible with a variety of devices and browsers.
+    In addition, I am committed to optimizing interface performance to ensure fast
+    loading times and a smooth user experience.
+  highlights:
+    - Implemented accessibility improvements for visually impaired users on the Android.com
+      page, resulting in a 5% increase in usability.
+    - Contributed to the professional growth of the team by providing technical guidance,
+      conducting code reviews, and fostering a culture of continuous learning.
+- name: Globant
+  id: globant
+  position: Web UI Developer
+  url: https://www.globant.com/
+  startDate: "2021-04-01"
+  endDate: "2022-11-30"
+  summary:
+    As a semi-senior developer, my primary responsibilities include contributing
+    to the design, development, and enhancement of reusable components and functionalities
+    for web applications. I leverage Angular, TypeScript, and HTML/CSS to build dynamic
+    and scalable user interfaces while efficiently integrating services through GraphQL
+    and RESTful APIs. My role involves optimizing application performance using advanced
+    techniques and implementing unit and integration tests to uphold code quality.
+    I collaborate closely with management teams and stakeholders to analyze business
+    requirements and translate them into reusable, effective technical solutions.
+    I focus on adopting agile methodologies to enable fast, iterative deliveries and
+    emphasize best practices in software engineering to ensure the security, scalability,
+    and long-term maintainability of the products I develop.
+  highlights: []
+- name: Digital Ware
+  id: dw
+  position: Angular Developer
+  url: https://www.digitalware.com.co/
+  startDate: "2017-04-01"
+  endDate: "2021-12-30"
+  summary:
+    I effectively integrated components and functionalities for the implementation
+    of BPM tools (Ophelia BPM) and their different verticals, thus ensuring that all
+    converge into a single technological solution. I used Angular, TypeScript, and
+    HTML/CSS as a stack for the integration of intuitive and easy-to-use web interfaces.
+  highlights: []
