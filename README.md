@@ -16,12 +16,6 @@ This project is a personal portfolio website that includes:
 
 ![Portfolio screenshot](/public/sreenshot-resume.png) <!-- Replace with the actual path -->
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
 ## 🚀 Project Structure
 
 ```text
