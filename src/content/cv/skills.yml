@@ -35,13 +35,6 @@
     - Frontend
     - JavaScript Library
     - UI
-- id: angular
-  name: Angular
-  level: Master
-  keywords:
-    - Web Development
-    - Frontend
-    - Framework
 - id: node
   name: Node
   level: Advanced
@@ -50,6 +43,13 @@
     - Backend
     - JavaScript
     - Server
+- id: angular
+  name: Angular
+  level: Master
+  keywords:
+    - Web Development
+    - Frontend
+    - Framework
 - id: nextjs
   name: Next.js
   level: Advanced
@@ -98,11 +98,3 @@
     - Version Control
     - Collaboration
     - Source Code
-- id: github
-  name: GitHub
-  level: Advanced
-  keywords:
-    - Version Control
-    - Collaboration
-    - Source Code
-    - Git

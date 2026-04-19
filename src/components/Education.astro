@@ -1,0 +1,40 @@
+---
+import { getDateFormat } from "@utils/formatDate";
+import { getCollection } from "astro:content";
+
+import Timeline from "./Timeline.astro";
+
+const educations = await getCollection("educations");
+
+const educationMapped = educations
+  .map(({ data }) => {
+    const { startDate, endDate } = data;
+
+    const startDateStr = getDateFormat(startDate, true);
+    const endDateStr = endDate ? getDateFormat(endDate, true) : "Present";
+
+    const durationRange = `${startDateStr} - ${endDateStr}`;
+    return {
+      ...data,
+      durationRange,
+    };
+  })
+  .sort(
+    (a, b) => new Date(b.startDate).valueOf() - new Date(a.startDate).valueOf(),
+  );
+---
+
+<section class="education-section mt-13">
+  <h2 class="font-bebas-neue text-[#414142] text-[16px]">EDUCATION</h2>
+  <hr class="text-[#414142] mt-0.5 mb-5" />
+
+  {
+    educationMapped.map((education) => (
+      <Timeline
+        title={education.institution}
+        date={education.durationRange}
+        subtitle={education.area}
+      />
+    ))
+  }
+</section>

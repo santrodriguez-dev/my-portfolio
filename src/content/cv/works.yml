@@ -3,7 +3,6 @@
   position: Software Development Engineer
   url: https://cbtw.tech/
   startDate: "2025-03-15"
-  endDate:
   summary:
     Collaborated with a leading U.S. financial services company providing digital
     wallet solutions for multiple banks, developing and maintaining high-performance,
@@ -15,7 +14,10 @@
     with Jest. Maintained clear technical documentation, identified performance and
     usability issues, and delivered continuous improvements to the application in
     an AWS-driven environment.
-  highlights: []
+  highlights:
+    - Collaborated with a leading U.S. financial services company, clarifying requirements and developing high-performance, accessible user interfaces using React, TypeScript, and Redux while adhering to quality standards.
+    - Worked closely with backend and design teams to translate business and functional requirements into scalable, reusable components within a modern cloud-based architecture, ensuring stakeholder alignment.
+    - Maintained clear technical documentation, identified performance and usability issues, and delivered continuous improvements to the application in an AWS-driven environment, ensuring operational efficiency.
 - name: Publicis Global Delivery (PGD)
   id: pgd
   position: Senior Web Developer
@@ -29,10 +31,9 @@
     delivery by implementing modern architectures, optimizing performance, and ensuring
     maintainability.
   highlights:
-    - Advocating for best practices in software development, including code reviews,
-      CI/CD workflows, performance optimization, and accessibility standards.
-    - Designing and implementing a flexible and scalable architecture that aligns with
-      business objectives while adapting to evolving technical requirements.
+    - Contributed to the migration of multiple products for Wegmans Food Markets, clarifying requirements and leveraging Next.js and Storybook to develop modular, testable, and scalable components while focusing on delivery planning and workflow improvement.
+    - Advocated for best practices in software development, including code reviews, CI/CD workflows, performance optimization, and accessibility standards ensuring process standardization.
+    - Designed and implemented a flexible and scalable architecture that aligns with business objectives while adapting to evolving technical requirements, with an emphasis on risk awareness.
 - name: Huge
   id: hige
   position: Senior Web Developer
@@ -50,10 +51,12 @@
     In addition, I am committed to optimizing interface performance to ensure fast
     loading times and a smooth user experience.
   highlights:
-    - Implemented accessibility improvements for visually impaired users on the Android.com
-      page, resulting in a 5% increase in usability.
-    - Contributed to the professional growth of the team by providing technical guidance,
-      conducting code reviews, and fostering a culture of continuous learning.
+    - Led and participated in the design, development, and implementation of high-quality user interfaces for the Android Enterprise website, ensuring prioritization of scalability, maintenance, and updates while adhering to quality standards.
+    - Worked closely with designers and development teams to translate interface designs into interactive and engaging experiences for users, clarifying requirements to achieve stakeholder alignment.
+    - Implemented intuitive, responsive, and compatible interfaces using technologies like HTML, CSS, and JavaScript, supporting change management processes.
+    - Optimized interface performance to ensure fast loading times and a smooth user experience, focusing on continuous improvement.
+    - Implemented accessibility improvements for visually impaired users on the Android.com page, resulting in a 5% increase in usability demonstrating operational efficiency.
+    - Contributed to the professional growth of the team by providing technical guidance, conducting code reviews, and fostering a culture of continuous learning with a focus on documentation.
 - name: Globant
   id: globant
   position: Web UI Developer
@@ -72,7 +75,12 @@
     I focus on adopting agile methodologies to enable fast, iterative deliveries and
     emphasize best practices in software engineering to ensure the security, scalability,
     and long-term maintainability of the products I develop.
-  highlights: []
+  highlights:
+    - As a semi-senior developer, my primary responsibilities include contributing to the design, development, and enhancement of reusable components and functionalities for web applications.
+    - I leverage Angular, TypeScript, and HTML/CSS to build dynamic and scalable user interfaces while efficiently integrating services through GraphQL and RESTful APIs.
+    - My role involves optimizing application performance using advanced techniques and implementing unit and integration tests to uphold code quality.
+    - I collaborate closely with management teams and stakeholders to analyze business requirements and translate them into reusable, effective technical solutions.
+    - I focus on adopting agile methodologies to enable fast, iterative deliveries and emphasize best practices in software engineering to ensure the security, scalability, and long-term maintainability of the products I develop.
 - name: Digital Ware
   id: dw
   position: Angular Developer
@@ -84,4 +92,6 @@
     of BPM tools (Ophelia BPM) and their different verticals, thus ensuring that all
     converge into a single technological solution. I used Angular, TypeScript, and
     HTML/CSS as a stack for the integration of intuitive and easy-to-use web interfaces.
-  highlights: []
+  highlights:
+    - I effectively integrated components and functionalities for the implementation of BPM tools (Ophelia BPM) and their different verticals, thus ensuring that all converge into a single technological solution.
+    - I used Angular, TypeScript, and HTML/CSS as a stack for the integration of intuitive and easy-to-use web interfaces.

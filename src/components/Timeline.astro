@@ -1,0 +1,52 @@
+---
+interface Props {
+  title: string;
+  date: string;
+  subtitle: string;
+}
+
+const { title, subtitle, date } = Astro.props;
+---
+
+<article class="timeline-entry flex pb-8">
+  <div class="w-34 text-[12px] pr-3.5">
+    <span class="block font-bold uppercase text-[#636466]">{title}</span>
+    <span class="block text-[#808183]">{date}</span>
+  </div>
+
+  <div class="time-content flex-1 relative pl-4">
+    <div
+      class="absolute w-2.5 h-2.5 rounded-full bg-[#414142] top-1.5 -left-[4.5px]"
+    >
+    </div>
+
+    <h4 class="font-bold text-[14px] text-[#808183]">
+      {subtitle}
+    </h4>
+    <slot />
+  </div>
+</article>
+
+<style>
+  .timeline-entry {
+    break-inside: avoid;
+    .time-content::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: -32px;
+      width: 1.05px;
+      background-color: #414142;
+      left: 0;
+    }
+    &:first-of-type .time-content::after {
+      top: 10px;
+    }
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+    &:last-of-type .time-content::after {
+      bottom: 0;
+    }
+  }
+</style>

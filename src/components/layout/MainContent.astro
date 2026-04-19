@@ -1,39 +1,43 @@
-<main class="flex-1">
-  <header class="main-header">
-    <h1 class="name">SANTIAGO RODRÍGUEZ</h1>
-    <p class="role-title">SOFTWARE DEVELOPMENT ENGINEER</p>
+---
+import Timeline from "@components/Timeline.astro";
+import PhoneIcon from "../../icons/PhoneIcon.astro";
+import MailIcon from "../../icons/MailIcon.astro";
+import LocationIcon from "../../icons/LocationIcon.astro";
+import Work from "@components/Work.astro";
+import Education from "@components/Education.astro";
+---
 
-    <div class="contact-grid">
-      <span>Bogotá, Colombia</span>
-      <span>+57 3194339228</span>
-      <span>srodriguezm95@gmail.com</span>
+<main class="flex-1 pl-6 pr-5 pt-16 pb-5 relative">
+  <header class="flex justify-between gap-x-2">
+    <div>
+      <h1 class="font-bebas-neue text-4xl text-[#414142]">
+        <span class="block tracking-wide">SANTIAGO</span>
+        <span class="block tracking-wide">RODRÍGUEZ</span>
+      </h1>
+      <p class="font-bebas-neue text-[12px] tracking-[1px] text-[#808183]">
+        SOFTWARE DEVELOPMENT ENGINEER
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-1.5 text-[#76777a] text-[11px]">
+      <div class="flex gap-2 items-center">
+        <LocationIcon />
+        <span class="flex-1 border-b border-b-[#e6e7e8]">Bogotá, Colombia</span>
+      </div>
+      <div class="flex gap-2 items-center">
+        <PhoneIcon />
+        <span class="flex-1 border-b border-b-[#e6e7e8]">+57 3194339228</span>
+      </div>
+      <div class="flex gap-2 items-center">
+        <MailIcon />
+        <a
+          class="flex-1 border-b border-b-[#e6e7e8]"
+          href="mailto:srodriguezm95@gmail.com">srodriguezm95@gmail.com</a
+        >
+      </div>
     </div>
   </header>
 
-  <section class="experience-section">
-    <h2 class="section-title">WORK EXPERIENCE</h2>
-
-    <div class="timeline">
-      <article class="timeline-entry">
-        <div class="entry-meta">
-          <h3 class="company-name">CBTW</h3>
-          <p class="date-range">Jan 2025 - Present</p>
-        </div>
-
-        <div class="entry-content">
-          <h4 class="job-title">Software Development Engineer</h4>
-          <ul class="responsibility-list">
-            <li>
-              Collaborated with a leading U.S. financial services company...
-            </li>
-            <li>Worked closely with backend and design teams...</li>
-            <li>
-              9 years of experience building web applications, targeting a
-              Software Development Engineer role. Leveraging expertise gained at
-            </li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
+  <Work />
+  <Education />
 </main>

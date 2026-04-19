@@ -37,37 +37,4 @@ const { title } = Astro.props;
     align-items: center;
     padding: 20px;
   }
-
-  /* The actual "Letter" page container */
-  .page {
-    @apply bg-white;
-    width: 8.5in;
-    /* height: 11in;
-    /* padding: 1in; /* Standard 1-inch margins */
-    margin-bottom: 0.5in; /* Space between multiple simulated pages */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box; /* Ensures padding doesn't increase 8.5x11 size */
-    overflow: hidden; /* Prevents content from leaking out */
-  }
-
-  @media print {
-    body {
-      background: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .page {
-      margin: 0;
-      box-shadow: none;
-      width: 100%; /* Spans the printer's defined width */
-      height: 100%;
-      height: auto;
-    }
-
-    @page {
-      size: letter; /* Specifically targets 8.5in x 11in */
-      margin: 0; /* Browser default margins can be cleared here */
-    }
-  }
 </style>

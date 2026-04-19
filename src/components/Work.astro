@@ -1,0 +1,59 @@
+---
+import { getDateFormat } from "@utils/formatDate";
+import Timeline from "./Timeline.astro";
+
+import { getCollection } from "astro:content";
+
+// interface ExperienceI {
+//   name: string;
+//   position: string;
+//   summary: string;
+//   startDate: Date;
+//   endDate?: Date;
+//   highlights: string[];
+// }
+
+const works = await getCollection("works");
+
+const esperienceMapped = works
+  .map(({ data }) => {
+    const { startDate, endDate } = data;
+
+    const startDateStr = getDateFormat(startDate);
+    const endDateStr = endDate ? getDateFormat(endDate) : "Present";
+
+    const durationRange = `${startDateStr} - ${endDateStr}`;
+    return {
+      ...data,
+      durationRange,
+    };
+  })
+  .sort(
+    (a, b) => new Date(b.startDate).valueOf() - new Date(a.startDate).valueOf(),
+  );
+---
+
+<section class="mt-14">
+  <h2 class="font-bebas-neue text-[#414142] text-[16px]">WORK EXPERIENCE</h2>
+  <hr class="text-[#414142] mt-0.5 mb-5" />
+
+  {
+    esperienceMapped.map((work) => (
+      <Timeline
+        title={work.name}
+        date={work.durationRange}
+        subtitle={work.position}
+      >
+        {/* <p>{work.summary}</p> */}
+
+        {work.highlights && (
+          <ul class="list-disc pl-3.5 pt-2.5 text-[#808183] text-[14px] space-y-2 leading-4.5">
+            {work.highlights.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        )}
+      </Timeline>
+    ))
+  }
+</section>

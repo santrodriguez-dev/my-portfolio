@@ -13,7 +13,7 @@ export default defineConfig({
       provider: fontProviders.google(),
       name: "Lato",
       cssVariable: "--font-lato",
-      weights: [300, 400, 600]
+      weights: [300, 400, 600, 700]
     },
     {
       provider: fontProviders.google(),

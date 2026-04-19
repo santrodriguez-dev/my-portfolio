@@ -12,20 +12,17 @@ const linkedin = basics?.data.profiles.find(
 ---
 
 <section class="px-8 py-4">
-  <h2 class="font-bebas-neue">ABOUT ME</h2>
+  <h2 class="font-bebas-neue text-[#e6e7e8]">ABOUT ME</h2>
   <p class="text-[12px] font-light mt-4.5 text-pretty">
     9 years of experience building web applications, targeting a Software
     Development Engineer role. Leveraging expertise gained at CBTW, contributing
     to the development and maintenance of accessible user interfaces. Holds a
-    Systems Engineer degree from Universidad Incca de Colombia. Adept at
-    stakeholder alignment and translating requirements into scalable solutions,
-    with a focus on upholding quality standards and driving continuous
-    improvement in complex projects.
+    Systems Engineer degree from Universidad Incca de Colombia.
   </p>
 </section>
-<hr class="h-px mx-8 bg-[#808183] border-0" />
+<hr class="h-0.5 mx-8 bg-[#808183] border-0" />
 <section class="px-8 py-4">
-  <h2 class="font-bebas-neue">SKILLS</h2>
+  <h2 class="font-bebas-neue text-[#e6e7e8]">SKILLS</h2>
   <ul class="flex flex-col gap-y-2 mt-4.5">
     {
       skills.map(({ data }) => (
@@ -39,9 +36,10 @@ const linkedin = basics?.data.profiles.find(
 </section>
 <hr class="h-px mx-8 bg-[#808183] border-0" />
 <section class="px-8 py-4">
-  <h2 class="font-bebas-neue">LINK</h2>
+  <h2 class="font-bebas-neue text-[#e6e7e8]">LINK</h2>
   <h3 class="text-[12px] font-semibold mt-3">{linkedin?.network}:</h3>
-  <a href={linkedin?.url} class="break-all text-[12px] font-light underline"
-    >{linkedin?.url}</a
-  >
+
+  <a href={linkedin?.url} class="break-all text-[12px] font-light underline">
+    {linkedin?.url}
+  </a>
 </section>

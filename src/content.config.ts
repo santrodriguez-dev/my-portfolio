@@ -26,15 +26,35 @@ const works = defineCollection({
   schema: z.object({
     name: z.string(),
     position: z.string(),
+    summary: z.string(),
+    startDate: z.string(),
+    endDate: z.optional(z.string()),
+    highlights: z.array(z.string()),
   }),
+});
+
+const educations = defineCollection({
+  loader: file("src/content/cv/educations.yml"),
+  schema: z.object({
+    institution: z.string(),
+    url: z.string(),
+    area: z.string(),
+    studyType: z.string(),
+    startDate: z.string(),
+    endDate: z.optional(z.string()),
+    score: z.string(),
+    courses: z.array(z.string()),
+  })
 });
 
 const skills = defineCollection({
   loader: file("src/content/cv/skills.yml"),
   schema: z.object({
+    id: z.string(),
     name: z.string(),
+    level: z.string(),
+    keywords: z.array(z.string()),
   }),
 });
-
 // 5. Export a single `collections` object to register your collection(s)
-export const collections = { basics, works, skills };
+export const collections = { basics, works, skills, educations };

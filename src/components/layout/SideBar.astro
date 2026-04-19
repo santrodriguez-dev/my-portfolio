@@ -3,22 +3,7 @@ import BioSection from "@components/BioSection.astro";
 import ProfileHeader from "@components/ImageProfile.astro";
 ---
 
-<aside class="bg-primary text-white w-[35%]">
+<aside class="resume-sidebar bg-primary text-white w-70">
   <ProfileHeader />
   <BioSection />
 </aside>
-
-<style>
-  aside {
-    print-color-adjust: exact;
-  }
-
-  @media print {
-    aside {
-      width: 40%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-    }
-  }
-</style>
