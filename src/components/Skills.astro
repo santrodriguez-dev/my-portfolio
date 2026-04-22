@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+
+const skills = await getCollection("skills");
+---
+
+<section class="px-8 py-4">
+  <h2 class="font-bebas-neue text-lg text-[#e6e7e8]">SKILLS</h2>
+  <ul class="flex flex-col gap-y-2 mt-4.5">
+    {
+      skills.map(({ data }) => (
+        <li class="text-xs font-light ">
+          <span>{data.name}</span>
+          <div class="w-full bg-white rounded-full h-1 mt-0.5" />
+        </li>
+      ))
+    }
+  </ul>
+</section>

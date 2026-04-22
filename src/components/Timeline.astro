@@ -3,14 +3,24 @@ interface Props {
   title: string;
   date: string;
   subtitle: string;
+  titleSize?: "sm" | "md" | "lg";
 }
 
-const { title, subtitle, date } = Astro.props;
+const { title, subtitle, date, titleSize = "sm" } = Astro.props;
 ---
 
 <article class="timeline-entry flex pb-8">
-  <div class="w-34 text-[12px] pr-3.5">
-    <span class="block font-bold uppercase text-[#636466]">{title}</span>
+  <div
+    class:list={[
+      { ["w-34 print:w-30"]: titleSize === "sm" },
+      { ["w-56"]: titleSize === "md" },
+      { ["w-85"]: titleSize === "lg" },
+      "text-[12px] pr-3.5  print:pr-1",
+    ]}
+  >
+    <span class="block font-bold uppercase text-pretty text-[#636466]"
+      >{title}</span
+    >
     <span class="block text-[#808183]">{date}</span>
   </div>
 

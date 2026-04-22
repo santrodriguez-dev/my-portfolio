@@ -1,10 +1,8 @@
 ---
-import { getEntry, getCollection } from "astro:content";
+import { getEntry } from "astro:content";
+import Skills from "./Skills.astro";
 
-const [basics, skills] = await Promise.all([
-  getEntry("basics", "basics"),
-  getCollection("skills"),
-]);
+const basics = await getEntry("basics", "basics");
 
 const linkedin = basics?.data.profiles.find(
   (item) => item.network === "LinkedIn",
@@ -12,8 +10,8 @@ const linkedin = basics?.data.profiles.find(
 ---
 
 <section class="px-8 py-4">
-  <h2 class="font-bebas-neue text-[#e6e7e8]">ABOUT ME</h2>
-  <p class="text-[12px] font-light mt-4.5 text-pretty">
+  <h2 class="font-bebas-neue text-lg text-[#e6e7e8]">ABOUT ME</h2>
+  <p class="text-sm font-light mt-4.5 text-pretty">
     9 years of experience building web applications, targeting a Software
     Development Engineer role. Leveraging expertise gained at CBTW, contributing
     to the development and maintenance of accessible user interfaces. Holds a
@@ -21,22 +19,12 @@ const linkedin = basics?.data.profiles.find(
   </p>
 </section>
 <hr class="h-0.5 mx-8 bg-[#808183] border-0" />
-<section class="px-8 py-4">
-  <h2 class="font-bebas-neue text-[#e6e7e8]">SKILLS</h2>
-  <ul class="flex flex-col gap-y-2 mt-4.5">
-    {
-      skills.map(({ data }) => (
-        <li class="text-[10px] font-light ">
-          <span>{data.name}</span>
-          <div class="w-full bg-white rounded-full h-0.5 mt-0.5" />
-        </li>
-      ))
-    }
-  </ul>
-</section>
+
+<Skills />
+
 <hr class="h-px mx-8 bg-[#808183] border-0" />
 <section class="px-8 py-4">
-  <h2 class="font-bebas-neue text-[#e6e7e8]">LINK</h2>
+  <h2 class="font-bebas-neue text-lg text-[#e6e7e8]">LINK</h2>
   <h3 class="text-[12px] font-semibold mt-3">{linkedin?.network}:</h3>
 
   <a href={linkedin?.url} class="break-all text-[12px] font-light underline">

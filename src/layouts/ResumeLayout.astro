@@ -1,6 +1,7 @@
 ---
 import { Font } from "astro:assets";
 import "../styles/global.css";
+import "../styles/print.css";
 import { ClientRouter } from "astro:transitions";
 
 interface Props {
@@ -27,9 +28,7 @@ const { title } = Astro.props;
   </body>
 </html>
 
-<style is:global>
-  @reference "tailwindcss";
-  /* Background styling to make the "page" stand out */
+<style>
   body {
     background: #ccc;
     display: flex;

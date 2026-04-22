@@ -2,10 +2,6 @@
 import ResumeLayout from "@layouts/ResumeLayout.astro";
 import MainContent from "@components/layout/MainContent.astro";
 import SideBar from "@components/layout/SideBar.astro";
-
-// import "../../styles/print.css";
-
-import { getEntry, getCollection } from "astro:content";
 ---
 
 <ResumeLayout title="Santiago Rodriguez | CV">
@@ -15,7 +11,7 @@ import { getEntry, getCollection } from "astro:content";
   </div>
 </ResumeLayout>
 
-<style is:global>
+<style>
   .resume-page {
     background: white;
     width: 8.5in;
@@ -24,53 +20,5 @@ import { getEntry, getCollection } from "astro:content";
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     box-sizing: border-box; /* Ensures padding doesn't increase 8.5x11 size */
     overflow: hidden; /* Prevents content from leaking out */
-  }
-
-  @media print {
-    @page :first {
-      padding: 0 1cm 0 0;
-    }
-
-    @page {
-      size: letter;
-      /* Specifically targets 8.5in x 11in */
-      margin: 0;
-      /* Browser default margins can be cleared here */
-      padding: 1.5cm;
-    }
-
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: none;
-    }
-
-    main {
-      padding-inline: 0;
-    }
-
-    .resume-page {
-      position: relative;
-      display: block !important;
-      margin: 0;
-      /* border: 1px solid red; */
-      box-shadow: none;
-      /* Spans the printer's defined width */
-      width: 100%;
-      height: 100%;
-    }
-
-    .resume-sidebar {
-      print-color-adjust: exact;
-      float: left;
-      margin-right: 1cm;
-      height: 99.9dvh;
-    }
-
-    .education-section {
-      break-before: page;
-      margin-top: 0;
-    }
   }
 </style>

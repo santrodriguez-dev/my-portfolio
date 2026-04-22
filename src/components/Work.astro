@@ -4,15 +4,6 @@ import Timeline from "./Timeline.astro";
 
 import { getCollection } from "astro:content";
 
-// interface ExperienceI {
-//   name: string;
-//   position: string;
-//   summary: string;
-//   startDate: Date;
-//   endDate?: Date;
-//   highlights: string[];
-// }
-
 const works = await getCollection("works");
 
 const esperienceMapped = works

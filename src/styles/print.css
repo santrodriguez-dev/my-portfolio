@@ -1,36 +1,26 @@
 @media print {
   @page :first {
-    padding: 0;
+    padding: 0 1cm 0 0 !important;
   }
 
   @page {
     size: letter;
     /* Specifically targets 8.5in x 11in */
-    margin: 0cm;
+    margin: 0;
     /* Browser default margins can be cleared here */
-    padding: 1cm;
-    border: 10px solid green;
+    padding: 1.5cm;
   }
 
   body {
+    width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     background: none;
   }
 
-  * {
-    print-color-adjust: exact;
-  }
-
-  .resume-sidebar {
-    float: left;
-    /* position: absolute; */
-    margin-right: 24px;
-    margin-bottom: 24px;
-    bottom: 0;
-    top: 0;
-    height: 100vh;
+  main {
+    padding-inline: 0;
   }
 
   .resume-page {
@@ -38,10 +28,21 @@
     display: block !important;
     margin: 0;
     /* border: 1px solid red; */
-    box-shadow: none;
+    box-shadow: none !important;
     /* Spans the printer's defined width */
-    width: 100%;
-    height: 100%;
-    /* height: auto; */
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .resume-sidebar {
+    print-color-adjust: exact;
+    float: left;
+    margin-right: 1cm;
+    height: 100vh;
+  }
+
+  .education-section {
+    break-before: page;
+    margin-top: 0;
   }
 }
