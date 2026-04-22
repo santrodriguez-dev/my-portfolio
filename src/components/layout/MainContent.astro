@@ -1,38 +1,47 @@
 ---
-import Timeline from "@components/Timeline.astro";
 import PhoneIcon from "../../icons/PhoneIcon.astro";
 import MailIcon from "../../icons/MailIcon.astro";
 import LocationIcon from "../../icons/LocationIcon.astro";
 import Work from "@components/Work.astro";
 import Education from "@components/Education.astro";
+import { getEntry } from "astro:content";
+
+const basics = await getEntry("basics", "basics");
+
+const profileInfo = basics!.data;
 ---
 
 <main class="flex-1 pl-6 pr-5 pt-16 pb-5 relative">
   <header class="flex justify-between gap-x-2">
     <div>
       <h1 class="font-bebas-neue text-4xl text-[#414142]">
-        <span class="block tracking-wide">SANTIAGO</span>
-        <span class="block tracking-wide">RODRÍGUEZ</span>
+        <span class="block tracking-wide w-min">{profileInfo.name}</span>
       </h1>
-      <p class="font-bebas-neue text-[12px] tracking-[1px] text-[#808183]">
-        SOFTWARE DEVELOPMENT ENGINEER
+      <p
+        class="font-bebas-neue uppercase text-[12px] tracking-[1px] text-[#808183]"
+      >
+        {profileInfo.label}
       </p>
     </div>
 
     <div class="flex flex-col gap-1.5 text-[#76777a] text-[11px]">
       <div class="flex gap-2 items-center">
         <LocationIcon />
-        <span class="flex-1 border-b border-b-[#e6e7e8]">Bogotá, Colombia</span>
+        <span class="flex-1 border-b border-b-[#e6e7e8]"
+          >{profileInfo.location.city}, {profileInfo.location.region}</span
+        >
       </div>
       <div class="flex gap-2 items-center">
         <PhoneIcon />
-        <span class="flex-1 border-b border-b-[#e6e7e8]">+57 3194339228</span>
+        <span class="flex-1 border-b border-b-[#e6e7e8]"
+          >{profileInfo.phone}</span
+        >
       </div>
       <div class="flex gap-2 items-center">
         <MailIcon />
         <a
           class="flex-1 border-b border-b-[#e6e7e8]"
-          href="mailto:srodriguezm95@gmail.com">srodriguezm95@gmail.com</a
+          href={`mailto:${profileInfo.email}`}>{profileInfo.email}</a
         >
       </div>
     </div>

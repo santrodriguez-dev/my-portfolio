@@ -1,17 +1,41 @@
 ---
 import { getCollection } from "astro:content";
 
+interface Props {
+  dispplayBar?: boolean;
+}
+
+const { dispplayBar = true } = Astro.props;
+
+const skillLevelWidths: Record<number, string> = {
+  5: "w-full",
+  4: "w-9/10",
+  3: "w-3/5",
+  2: "w-2/5",
+  1: "w-1/5",
+};
+
 const skills = await getCollection("skills");
+
+const sortedSkills = skills
+  .map(({ data }) => data)
+  .sort((a, b) => b.level - a.level || a.order - b.order);
 ---
 
 <section class="px-8 py-4">
   <h2 class="font-bebas-neue text-lg text-[#e6e7e8]">SKILLS</h2>
   <ul class="flex flex-col gap-y-2 mt-4.5">
     {
-      skills.map(({ data }) => (
+      sortedSkills.map(({ level, name }) => (
         <li class="text-xs font-light ">
-          <span>{data.name}</span>
-          <div class="w-full bg-white rounded-full h-1 mt-0.5" />
+          <span>{name}</span>
+          {dispplayBar && (
+            <div class="bg-[#13151a30] h-1 rounded-full mt-1">
+              <div
+                class={`bg-[#e6e7e8] h-1 rounded-full ${skillLevelWidths[level]}`}
+              />
+            </div>
+          )}
         </li>
       ))
     }

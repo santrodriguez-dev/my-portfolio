@@ -1,99 +1,75 @@
-- id: html
-  name: HTML
-  level: Master
+- id: html-css-js
+  name: HTML - CSS - JavaScript
+  level: 5
+  order: 1
   keywords:
     - Web Development
     - Frontend
-- id: css
-  name: CSS
-  level: Master
-  keywords:
-    - Web Development
-    - Frontend
-    - Responsive Design
-- id: js
-  name: JavaScript
-  level: Master
-  keywords:
-    - Web Development
-    - Frontend
-    - Backend
-    - Fullstack
 - id: ts
   name: TypeScript
-  level: Advanced
+  level: 5
+  order: 2
   keywords:
     - Web Development
     - Frontend
     - Backend
     - JavaScript Superset
 - id: react
-  name: React
-  level: Advanced
+  name: React - Next.js
+  level: 5
+  order: 3
   keywords:
     - Web Development
     - Frontend
     - JavaScript Library
     - UI
 - id: node
-  name: Node
-  level: Advanced
+  name: NodeJs - Express
+  level: 4
+  order: 4
   keywords:
     - Web Development
     - Backend
     - JavaScript
     - Server
 - id: angular
-  name: Angular
-  level: Master
+  name: Angular - RxJS
+  level: 5
+  order: 5
   keywords:
     - Web Development
     - Frontend
     - Framework
-- id: nextjs
-  name: Next.js
-  level: Advanced
-  keywords:
-    - Web Development
-    - Frontend
-    - React Framework
-    - SSR
-    - Static Generation
-- id: astro
-  name: Astro
-  level: Advanced
-  keywords:
-    - Web Development
-    - Frontend
-    - React Framework
-    - SSR
-    - Static Generation
 - id: mysql
-  name: MySQL
-  level: Advanced
+  name: MySQL - PostgreSQL
+  level: 4
+  order: 6
   keywords:
     - Databases
     - SQL
     - Data Storage
     - Backend
 - id: mongodb
-  name: MongoDB
-  level: Advanced
+  name: NoSQL - MongoDB - DynamoDB
+  level: 4
+  order: 7
   keywords:
     - Databases
     - NoSQL
     - Data Storage
     - Backend
 - id: aws
-  name: AWS
-  level: Master
+  name: AWS - S3 - CloudFront - Lambda
+  level: 4
+  order: 8
   keywords:
     - Data Storage
     - Backend
     - Cloud computing
 - id: git
-  name: Git
-  level: Advanced
+  name: Git - GitHub - GitLab
+  level: 5
+  order: 9
   keywords:
     - Version Control
     - Collaboration

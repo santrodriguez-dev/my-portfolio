@@ -4,6 +4,10 @@ import { Image } from "astro:assets";
 // import profileImage from "@images/santi.jpeg";
 // import profileImage from "@images/santi-formal.jpeg";
 import profileImage from "@images/santi-gpt.png";
+import { getEntry } from "astro:content";
+
+const basics = await getEntry("basics", "basics");
+// console.log("basics", basics);
 ---
 
 <header class="flex justify-center items-center pt-8">
@@ -13,7 +17,7 @@ import profileImage from "@images/santi-gpt.png";
       src={profileImage}
       alt="profile image"
       width="200"
-      alt="Profile image santiago Rodriguez"
+      alt={basics?.data.name || "Profile Image"}
     />
   </a>
 </header>
