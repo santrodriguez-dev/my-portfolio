@@ -12,13 +12,13 @@ const { title, subtitle, date, titleSize = "sm" } = Astro.props;
 <article class="timeline-entry flex pb-8">
   <div
     class:list={[
-      { ["w-34 print:w-30"]: titleSize === "sm" },
-      { ["w-56"]: titleSize === "md" },
+      { ["w-34"]: titleSize === "sm" },
+      { ["w-42"]: titleSize === "md" },
       { ["w-85"]: titleSize === "lg" },
-      "text-[12px] pr-3.5  print:pr-1",
+      "text-[12px] pr-3.5  print:pr-1 title-section",
     ]}
   >
-    <span class="block font-bold uppercase text-pretty text-[#636466]"
+    <span class="block font-bold uppercase text-pretty text-[#636466] separator"
       >{title}</span
     >
     <span class="block text-[#808183]">{date}</span>
@@ -26,7 +26,7 @@ const { title, subtitle, date, titleSize = "sm" } = Astro.props;
 
   <div class="time-content flex-1 relative pl-4">
     <div
-      class="absolute w-2.5 h-2.5 rounded-full bg-[#414142] top-1.5 -left-[4.5px]"
+      class="circle-time absolute w-2.5 h-2.5 rounded-full bg-[#414142] top-1.5 -left-[4.5px]"
     >
     </div>
 
@@ -37,7 +37,7 @@ const { title, subtitle, date, titleSize = "sm" } = Astro.props;
   </div>
 </article>
 
-<style>
+<style is:inline>
   .timeline-entry {
     break-inside: avoid;
     .time-content::after {

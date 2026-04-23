@@ -23,6 +23,15 @@
     - Frontend
     - JavaScript Library
     - UI
+- id: test-quality
+  name: Testing - Jest - React Testing Library - Playwright
+  level: 4
+  order: 4
+  keywords:
+    - Web Development
+    - Frontend
+    - Backend
+    - Quality Assurance
 - id: node
   name: NodeJs - Express
   level: 4
@@ -41,7 +50,7 @@
     - Frontend
     - Framework
 - id: mysql
-  name: MySQL - PostgreSQL
+  name: SQL - PostgreSQL
   level: 4
   order: 6
   keywords:

@@ -16,30 +16,13 @@
     an AWS-driven environment.
   highlights:
     - Collaborated with a leading U.S. financial services company, clarifying requirements and developing high-performance, accessible user interfaces using React, TypeScript, and Redux while adhering to quality standards.
-    - Worked closely with backend and design teams to translate business and functional requirements into scalable, reusable components within a modern cloud-based architecture, ensuring stakeholder alignment.
     - Maintained clear technical documentation, identified performance and usability issues, and delivered continuous improvements to the application in an AWS-driven environment, ensuring operational efficiency.
-- name: Publicis Global Delivery
-  id: pgd
-  position: Senior Web Developer
-  url: https://www.publicisgroupe.com/
-  startDate: "2024-10-01"
-  endDate: "2025-02-10"
-  summary:
-    Contributing to the migration of multiple products for Wegmans Food Markets,
-    a leading American supermarket chain, leveraging Next.js and Storybook to develop
-    modular, testable, and scalable components and driving fast and efficient value
-    delivery by implementing modern architectures, optimizing performance, and ensuring
-    maintainability.
-  highlights:
-    - Contributed to the migration of multiple products for Wegmans Food Markets, clarifying requirements and leveraging Next.js and Storybook to develop modular, testable, and scalable components while focusing on delivery planning and workflow improvement.
-    - Advocated for best practices in software development, including code reviews, CI/CD workflows, performance optimization, and accessibility standards ensuring process standardization.
-    - Designed and implemented a flexible and scalable architecture that aligns with business objectives while adapting to evolving technical requirements, with an emphasis on risk awareness.
 - name: Huge
-  id: hige
+  id: huge
   position: Senior Web Developer
   url: https://www.hugeinc.com/
-  startDate: "2022-10-01"
-  endDate: "2024-01-30"
+  startDate: "2022-11-02"
+  endDate: "2025-02-10"
   summary:
     As a Senior Software Developer, my main role was to lead and participate
     in the design, development, and implementation of high-quality user interfaces
@@ -52,16 +35,14 @@
     loading times and a smooth user experience.
   highlights:
     - Led and participated in the design, development, and implementation of high-quality user interfaces for the Android Enterprise website, ensuring prioritization of scalability, maintenance, and updates while adhering to quality standards.
-    - Worked closely with designers and development teams to translate interface designs into interactive and engaging experiences for users, clarifying requirements to achieve stakeholder alignment.
     - Implemented intuitive, responsive, and compatible interfaces using technologies like HTML, CSS, and JavaScript, supporting change management processes.
-    - Optimized interface performance to ensure fast loading times and a smooth user experience, focusing on continuous improvement.
     - Implemented accessibility improvements for visually impaired users on the Android.com page, resulting in a 5% increase in usability demonstrating operational efficiency.
     - Contributed to the professional growth of the team by providing technical guidance, conducting code reviews, and fostering a culture of continuous learning with a focus on documentation.
 - name: Globant
   id: globant
   position: Web UI Developer
   url: https://www.globant.com/
-  startDate: "2021-04-01"
+  startDate: "2021-12-01"
   endDate: "2022-11-30"
   summary:
     As a semi-senior developer, my primary responsibilities include contributing

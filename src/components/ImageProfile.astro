@@ -7,12 +7,12 @@ import profileImage from "@images/santi-gpt.png";
 import { getEntry } from "astro:content";
 
 const basics = await getEntry("basics", "basics");
-// console.log("basics", basics);
 ---
 
 <header class="flex justify-center items-center pt-8">
   <a class="size-40 rounded-full overflow-hidden" href="/resume/detail">
     <Image
+      priority
       transition:name="profile-img"
       src={profileImage}
       alt="profile image"

@@ -41,8 +41,39 @@
     height: 100vh;
   }
 
+  .timeline-entry {
+
+    .time-content::after,
+    .circle-time {
+      display: none;
+    }
+  }
+
+  .work-section {
+    .title-section {
+      width: 115px;
+      padding: 0;
+    }
+  }
+
   .education-section {
-    break-before: page;
-    margin-top: 0;
+    .title-section {
+      width: 320px;
+    }
+
+    /* break-before: page;
+        margin-top: 0; */
+    .timeline-entry {
+      padding-bottom: 15px;
+
+      .separator::after {
+        content: " | ";
+        margin: 0 5px;
+      }
+
+      span {
+        display: inline;
+      }
+    }
   }
 }

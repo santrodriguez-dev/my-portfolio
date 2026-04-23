@@ -29,11 +29,11 @@ const educationMapped = educations
   <hr class="text-[#414142] mt-0.5 mb-5" />
 
   {
-    educationMapped.map((education) => (
+    educationMapped.map(({ area, durationRange, institution }) => (
       <Timeline
-        title={education.institution}
-        date={education.durationRange}
-        subtitle={education.area}
+        title={area}
+        date={durationRange}
+        subtitle={institution}
         titleSize="md"
       />
     ))

@@ -7,11 +7,10 @@ import Education from "@components/Education.astro";
 import { getEntry } from "astro:content";
 
 const basics = await getEntry("basics", "basics");
-
 const profileInfo = basics!.data;
 ---
 
-<main class="flex-1 pl-6 pr-5 pt-16 pb-5 relative">
+<main class="flex-1 pl-6 pr-5 pt-8 pb-5 relative">
   <header class="flex justify-between gap-x-2">
     <div>
       <h1 class="font-bebas-neue text-4xl text-[#414142]">
@@ -24,7 +23,7 @@ const profileInfo = basics!.data;
       </p>
     </div>
 
-    <div class="flex flex-col gap-1.5 text-[#76777a] text-[11px]">
+    <div class="flex flex-col gap-1 text-[#76777a] text-[11px]">
       <div class="flex gap-2 items-center">
         <LocationIcon />
         <span class="flex-1 border-b border-b-[#e6e7e8]"

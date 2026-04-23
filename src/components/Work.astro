@@ -24,7 +24,7 @@ const esperienceMapped = works
   );
 ---
 
-<section class="mt-14">
+<section class="work-section mt-8">
   <h2 class="font-bebas-neue text-[#414142] text-lg">WORK EXPERIENCE</h2>
   <hr class="text-[#414142] mt-0.5 mb-5" />
 
@@ -35,7 +35,11 @@ const esperienceMapped = works
         date={work.durationRange}
         subtitle={work.position}
       >
-        {/* <p>{work.summary}</p> */}
+        {/* TODO: summary */}
+        <p class="text-pretty text-[#808183] text-[14px] space-y-2 leading-4.5">
+          Led cross-functional engineering teams delivering high-impact
+          marketing solutions for Google's core products.
+        </p>
 
         {work.highlights && (
           <ul class="list-disc pl-3.5 pt-2.5 text-[#808183] text-[14px] space-y-2 leading-4.5">
