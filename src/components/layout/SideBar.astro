@@ -3,7 +3,16 @@ import BioSection from "@components/BioSection.astro";
 import ProfileHeader from "@components/ImageProfile.astro";
 ---
 
-<aside class="resume-sidebar bg-primary text-white w-70">
+<aside class="resume-sidebar bg-primary text-white w-full md:w-70 flex flex-col md:h-auto">
   <ProfileHeader />
   <BioSection />
 </aside>
+
+<style>
+  @media (max-width: 768px) {
+    .resume-sidebar {
+      width: 100% !important;
+      padding: 1rem 0 !important;
+    }
+  }
+</style>

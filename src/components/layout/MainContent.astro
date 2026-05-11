@@ -15,20 +15,20 @@ const linkedin = basics?.data.profiles.find(
 );
 ---
 
-<main class="flex-1 pl-6 pr-5 pt-8 pb-5 relative">
-  <header class="flex justify-between gap-x-2">
+<main class="flex-1 pl-4 md:pl-6 pr-4 md:pr-5 pt-4 md:pt-8 pb-5 relative w-full md:w-auto">
+  <header class="flex flex-col md:flex-row justify-between gap-y-4 md:gap-x-2">
     <div>
-      <h1 class="font-bebas-neue text-4xl text-[#414142]">
+      <h1 class="font-bebas-neue text-3xl md:text-4xl text-[#414142]">
         <span class="block tracking-wide w-min">{profileInfo.name}</span>
       </h1>
       <p
-        class="font-bebas-neue uppercase text-[12px] tracking-[1px] text-[#808183]"
+        class="font-bebas-neue uppercase text-xs md:text-[12px] tracking-[1px] text-[#595A5C]"
       >
         {profileInfo.label}
       </p>
     </div>
 
-    <div class="flex flex-col gap-1 text-[#76777a] text-[11px]">
+    <div class="flex flex-col gap-1 text-[#595A5C] text-xs md:text-sm">
       <div class="flex gap-2 items-center">
         <LocationIcon />
         <span class="flex-1 border-b border-b-[#e6e7e8]"
@@ -44,13 +44,13 @@ const linkedin = basics?.data.profiles.find(
       <div class="flex gap-2 items-center">
         <MailIcon />
         <a
-          class="flex-1 border-b border-b-[#e6e7e8]"
+          class="flex-1 border-b border-b-[#e6e7e8] hover:underline"
           href={`mailto:${profileInfo.email}`}>{profileInfo.email}</a
         >
       </div>
       <div class="flex gap-2 items-center">
         <LinkedinIcon />
-        <a class="flex-1 border-b border-b-[#e6e7e8]" href={linkedin?.url}>
+        <a class="flex-1 border-b border-b-[#e6e7e8] hover:underline" href={linkedin?.url}>
           linkedin.com/in/{linkedin?.username}
         </a>
       </div>

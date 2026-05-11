@@ -4,7 +4,7 @@ import { getEntry } from "astro:content";
 import MainLayout from "@layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 
-import profileImage from "@images/santi.jpeg";
+import profileImage from "@images/santi-gpt.png";
 import ResumeLayout from "@layouts/ResumeLayout.astro";
 import { getCollection } from "astro:content";
 
@@ -14,14 +14,21 @@ const { data } = basics;
 ---
 
 <ResumeLayout title="Santiago Rodriguez | Detail">
-  <a href="/resume">
-    <Image
-      transition:name="profile-img"
-      src={profileImage}
-      alt="profile image"
-      width="500"
-      alt="Profile image santiago Rodriguez"
-    />
-  </a>
-  <p transition:name="basics-name" class="text-6xl">{data.name}</p>
+  <nav class="mb-6 flex items-center gap-2">
+    <a href="/resume" class="flex items-center gap-2 text-blue-600 hover:text-blue-800 hover:underline focus:outline-2 focus:outline-offset-2 focus:outline-blue-600">
+      ← Volver al CV
+    </a>
+  </nav>
+  
+  <div class="max-w-2xl mx-auto">
+    <a href="/resume" class="block hover:opacity-90 transition-opacity">
+      <Image
+        transition:name="profile-img"
+        src={profileImage}
+        alt={`${data.name} - Foto de perfil`}
+        width="500"
+      />
+    </a>
+    <p transition:name="basics-name" class="text-4xl md:text-6xl mt-8 text-center">{data.name}</p>
+  </div>
 </ResumeLayout>

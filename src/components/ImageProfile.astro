@@ -10,14 +10,13 @@ const [basics] = await getCollection("basics");
 ---
 
 <header class="flex justify-center items-center pt-8">
-  <a class="size-40 rounded-full overflow-hidden" href="/resume/detail">
+  <a class="size-40 rounded-full overflow-hidden hover:opacity-90 transition-opacity" href="/resume/detail" title="Ver imagen de perfil en grande">
     <Image
       priority
       transition:name="profile-img"
       src={profileImage}
-      alt="profile image"
+      alt={basics?.data.name || "Santiago Rodríguez - Profile Image"}
       width="200"
-      alt={basics?.data.name || "Profile Image"}
     />
   </a>
 </header>

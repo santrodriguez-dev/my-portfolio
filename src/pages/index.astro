@@ -1,7 +1,106 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
+
+const [basics] = await getCollection("basics");
+const skills = await getCollection("skills");
+const works = await getCollection("works");
+
+const profileData = basics?.data;
+const topSkills = skills.slice(0, 5).map(s => s.data.name);
+const latestWork = works[0]?.data;
+
+import { getDateFormat } from "@utils/formatDate";
 ---
 
-<MainLayout title="Home">
-  <a href="/resume">Resume</a>
+<MainLayout title={`${profileData?.name} - Software Engineer`}>
+  <div class="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-16 md:py-24">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bebas-neue tracking-wide mb-4">
+          {profileData?.name}
+        </h1>
+        <p class="text-lg md:text-2xl text-slate-300 mb-2">
+          {profileData?.label}
+        </p>
+        <p class="text-slate-400 mb-8">
+          📍 {profileData?.location.city}, {profileData?.location.region}
+        </p>
+        
+        <!-- Bio -->
+        {profileData?.summary && (
+          <p class="text-slate-300 leading-relaxed mb-8 text-lg">
+            {profileData.summary}
+          </p>
+        )}
+        
+        <!-- CTA Button -->
+        <a 
+          href="/resume" 
+          class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors mb-12 focus:outline-2 focus:outline-offset-2 focus:outline-blue-400"
+        >
+          Ver CV Completo →
+        </a>
+      </div>
+    </section>
+
+    <!-- Top Skills Section -->
+    <section class="container mx-auto px-4 py-12">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bebas-neue tracking-wide mb-6">Habilidades Principales</h2>
+        <div class="flex flex-wrap gap-3">
+          {topSkills.map((skill) => (
+            <span class="bg-blue-600 px-4 py-2 rounded-full text-sm font-medium">
+              {skill}
+            </span>
+          ))}
+        </div>
+        <a href="/resume#skills" class="text-blue-300 hover:text-blue-200 mt-4 inline-block">
+          Ver todas las habilidades →
+        </a>
+      </div>
+    </section>
+
+    <!-- Latest Work Section -->
+    {latestWork && (
+      <section class="container mx-auto px-4 py-12 border-t border-slate-700">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bebas-neue tracking-wide mb-6">Experiencia Más Reciente</h2>
+          <div class="bg-slate-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">{latestWork.position}</h3>
+            <p class="text-slate-400 mb-4">{latestWork.name}</p>
+            <p class="text-slate-300 mb-4">{latestWork.summary}</p>
+            <a href="/resume" class="text-blue-300 hover:text-blue-200">
+              Ver experiencia completa →
+            </a>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- Contact Section -->
+    <section class="container mx-auto px-4 py-12 border-t border-slate-700">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bebas-neue tracking-wide mb-6">Contacto</h2>
+        <div class="space-y-3">
+          <p>
+            <a href={`mailto:${profileData?.email}`} class="text-blue-300 hover:text-blue-200 hover:underline">
+              ✉️ {profileData?.email}
+            </a>
+          </p>
+          <p>
+            <a href={`tel:${profileData?.phone}`} class="text-blue-300 hover:text-blue-200 hover:underline">
+              📱 {profileData?.phone}
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-4 py-8 border-t border-slate-700 text-slate-400 text-center">
+      <p>© 2025 {profileData?.name}. Todos los derechos reservados.</p>
+    </footer>
+  </div>
 </MainLayout>

@@ -5,7 +5,7 @@ import SideBar from "@components/layout/SideBar.astro";
 ---
 
 <ResumeLayout title="Santiago Rodriguez | CV">
-  <div class="resume-page flex">
+  <div class="resume-page flex flex-col md:flex-row">
     <SideBar />
     <MainContent />
   </div>
@@ -14,11 +14,28 @@ import SideBar from "@components/layout/SideBar.astro";
 <style>
   .resume-page {
     background: white;
-    width: 8.5in;
-    /* height: 11in; */
-    /* padding: 1in; /* Standard 1-inch margins */
+    width: 100%;
+    max-width: 8.5in;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box; /* Ensures padding doesn't increase 8.5x11 size */
-    overflow: hidden; /* Prevents content from leaking out */
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Mobile optimization */
+  @media (max-width: 768px) {
+    .resume-page {
+      width: 100%;
+      max-width: 100%;
+      box-shadow: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  /* Desktop - fixed 8.5in Letter size */
+  @media (min-width: 768px) {
+    .resume-page {
+      width: 8.5in;
+    }
   }
 </style>
