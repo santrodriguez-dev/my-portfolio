@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4cd6ca70-6924-49ea-b478-cb7cf845a20c/deploy-status)](https://app.netlify.com/projects/santiago-rodriguez-cv/deploys)
+
 # My Portfolio
 
 This is a personal portfolio that includes a CV created with HTML and CSS, using Astro collections and Tailwind.
